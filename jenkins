@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@honeysri16 
-keyspaceits
-/
-javawebapp
-Public
-Code
-Issues
-Pull requests
-3
-Actions
-Projects
-Wiki
-Security
-Insights
-javawebapp/Jenkinsfile
-@keyspaceits
-keyspaceits Update Jenkinsfile
-Latest commit 9448a40 21 days ago
- History
- 1 contributor
-23 lines (23 sloc)  678 Bytes
-   
 pipeline {
     agent any
     tools {
@@ -50,16 +21,3 @@ pipeline {
         }
     }
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
