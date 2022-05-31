@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-    maven 'Maven3.8.4'	
+    maven 'mvn3.8.5'	
 	}
     stages {
         stage('Checkout') {
@@ -14,10 +14,10 @@ pipeline {
                 sh 'mvn clean install -f pom.xml'
             }
         }
-        stage('Deploy to Tomcat') {
-            steps {
-                deploy adapters: [tomcat9(credentialsId: 'tomcat-deployer', path: '', url: 'http://52.45.81.16/')], contextPath: null, war: '**/*.war'
-            }
-        }
+        //stage('Deploy to Tomcat') {
+          //  steps {
+            //    deploy adapters: [tomcat9(credentialsId: 'tomcat-deployer', path: '', url: 'http://52.45.81.16/')], contextPath: null, war: '**/*.war'
+            //}
+        //}
     }
 }
