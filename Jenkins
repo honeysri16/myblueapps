@@ -4,11 +4,11 @@ pipeline {
     maven 'mvn3.8.5'	
 	}
     stages {
-        stage('Checkout') {
-            steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/keyspaceits/javawebapp.git']]])
-            }
-        }
+        /stage('Checkout') {
+           / steps {
+             /   checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/keyspaceits/javawebapp.git']]])
+          /  }
+      /  }
         stage('Build') {
             steps {
                 sh 'mvn clean install -f pom.xml'
